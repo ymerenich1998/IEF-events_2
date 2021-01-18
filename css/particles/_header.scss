@@ -1,0 +1,67 @@
+header{
+  background-color: $primary-color;
+  .header-content{
+    min-height: 600px;
+    h3{
+      font-weight: 300;
+    }
+  }
+  .header-images{
+    background-color: $accent-color;
+    position: relative;
+    right: -30px;
+    .header-photo{
+      position: relative;
+      top: -30px;
+      left: -30px;
+      width: 100%;
+      max-width: 780px;
+    }
+  }
+  .fas{
+    font-size: $subtitle;
+  }
+}
+
+.events-date{
+  color: $accent-color;
+  font-size: $section;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1660px){
+  header{
+    .header-images{
+      right: -100px;
+      .header-photo{
+        width: 680px;
+        top: -40px;
+        left: -85px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px){
+  header{
+    .header-images{
+      right: -15px;
+      .header-photo{
+        top: -25px;
+        left: -25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px){
+  header{
+    .header-images{
+      right: -5px;
+      .header-photo{
+        top: -10px;
+        left: -10px;
+      }
+    }
+  }
+}

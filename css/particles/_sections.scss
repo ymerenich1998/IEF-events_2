@@ -1,0 +1,97 @@
+section{
+  min-height: 500px;
+  p{
+    font-size: $text;
+    font-weight: 300;
+  }
+  &.alt{
+    background-color: $primary-color;
+  }
+  &.tematics{
+    .icons{
+      margin: auto;
+      @include radius(100px);
+      width: 180px;
+      height: 180px;
+      background: $wtext;
+      border: 8px solid $secondary-color;
+    }
+    .tematics_title{
+      font-size: $text;
+      font-weight: 500;
+    }
+  }
+  &.program{
+    background: linear-gradient(90deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 100%) ,url("../images/first_1.jpg") no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  &.material{
+    background: linear-gradient(90deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 100%) ,url("../images/second.jpg") no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    a{
+      text-decoration: underline;
+    }
+  }
+  h2{
+    font-size: $big-text;
+  }
+  &.komitet{
+    b{
+      font-size: $text;
+      text-align: left;
+    }
+    span{
+      font-size: $text;
+      text-align: left;
+    }
+    .kometet-item{
+      padding-bottom: 10px;
+      border-bottom: 2px solid rgba($btext, .25);
+      &.alt{
+        border-bottom: none;
+      }
+    }
+  }
+  &.konf{
+    min-height: 450px;
+  }
+}
+
+h4{
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 3px;
+    background-color: $accent-color;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width:767px) {
+  section{
+    h2{
+      font-size: $subtitle;
+    }
+    p{
+      font-size: 1rem;
+    }
+    &.komitet{
+      b{
+        display: block;
+        font-size: 1rem;
+        text-align: center;
+      }
+      span{
+        display: block;
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+footer{
+  min-height: 600px;
+  background-color: $primary-color;
+  .contact_map{
+    background-color: $wtext;
+    min-height: 300px;
+    h5{
+      font-size: $section;
+    }
+    iframe{
+      margin-bottom: -7px;
+    }
+  }
+}
+
+@media screen and (max-width:767px) {
+  footer{
+    .contact_map{
+      h5{
+        font-size: $text;
+      }
+    }
+  }
+}

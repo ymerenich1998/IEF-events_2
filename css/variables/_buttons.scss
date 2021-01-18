@@ -1,0 +1,15 @@
+.btn-ief{
+  @include radius;
+  @include fade;
+  background: $accent-color;
+  font-size: $text;
+  color: $wtext;
+  font-weight: bold;
+  padding: 10px 60px;
+  &:hover{
+    transform: scale(1.1);
+  }
+  &:focus{
+    box-shadow: none;
+  }
+}
